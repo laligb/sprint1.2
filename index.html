@@ -3,19 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./SASS/main.scss" />
+    <title>Sprint 1.2</title>
   </head>
   <body>
-    <header>
-      <div id="logo"></div>
-      <div class="navigation"></div>
-    </header>
-    <section class="section1">
-      <div></div>
-      <div></div>
-    </section>
-    <section class="section2"></section>
-    <section class="section3"></section>
+    <div class="container">
+      <header class="justify-content-md-center my-5">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-2">
+          <a class="navbar-brand" href="#">BOOKMARK</a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">FEATURES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PRICING</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT</a>
+              </li>
+              <li class="nav-item">
+                <button class="btn btn-danger my-2 my-sm-0" type="submit">
+                  LOGIN
+                </button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <section class="row">
+        <div class="col-6 p-5">
+          <h1>A Simple Bookmark Manager</h1>
+          <p>
+            A clean and simple interface to organize your favourite websites.
+            Open a new browser tab and see your sites load instantly. Try it for
+            free.
+          </p>
+          <button class="btn btn-primary">Get it on Chrome</button>
+          <button class="btn btn-outline-dark">Get it on Firefox</button>
+        </div>
+        <div class="col-6">26765</div>
+      </section>
+    </div>
+    <section class="row"></section>
+    <section class="row"></section>
   </body>
 </html>
