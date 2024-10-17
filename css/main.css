@@ -11871,8 +11871,13 @@ textarea.form-control-lg {
   z-index: -1;
 }
 
-.btn-custom {
-  background-color: #4f63d6;
+.btn-custom-primary {
+  background-color: #5265e1;
+  color: white;
+}
+
+.btn-custom-secondary {
+  background-color: #fa5959;
   color: white;
 }
 
