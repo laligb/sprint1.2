@@ -7,14 +7,15 @@
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="./SASS/main.scss" />
+    <link rel="stylesheet" href="css/main.css" />
+
     <title>Sprint 1.2</title>
   </head>
   <body>
     <div class="container">
       <header class="justify-content-md-center my-5">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light p-2">
-          <a class="navbar-brand" href="#">BOOKMARK</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white p-2">
+          <a class="navbar-brand logo" href="#"></a>
 
           <button
             class="navbar-toggler"
@@ -31,16 +32,19 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="#">FEATURES</a>
+                <a class="nav-link px-4" href="#">FEATURES</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">PRICING</a>
+                <a class="nav-link px-4" href="#">PRICING</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">CONTACT</a>
+                <a class="nav-link px-4" href="#">CONTACT</a>
               </li>
               <li class="nav-item">
-                <button class="btn btn-danger my-2 my-sm-0" type="submit">
+                <button
+                  class="btn shadow rounded btn-danger my-2 my-sm-0 px-4 mx-4"
+                  type="submit"
+                >
                   LOGIN
                 </button>
               </li>
@@ -49,18 +53,25 @@
         </nav>
       </header>
 
-      <section class="row">
+      <section class="row p-5">
         <div class="col-6 p-5">
-          <h1>A Simple Bookmark Manager</h1>
-          <p>
+          <h1 class="mb-4">A Simple Bookmark Manager</h1>
+          <p class="mb-4">
             A clean and simple interface to organize your favourite websites.
             Open a new browser tab and see your sites load instantly. Try it for
             free.
           </p>
-          <button class="btn btn-primary">Get it on Chrome</button>
-          <button class="btn btn-outline-dark">Get it on Firefox</button>
+          <button class="btn shadow btn-custom rounded px-4 py-2">
+            Get it on Chrome
+          </button>
+          <button class="btn shadow bg-white rounded mx-3 px-4 py-2">
+            Get it on Firefox
+          </button>
         </div>
-        <div class="col-6">26765</div>
+        <div class="col-6">
+          <div class="screen-img"></div>
+          <div class="arc"></div>
+        </div>
       </section>
     </div>
     <section class="row"></section>
