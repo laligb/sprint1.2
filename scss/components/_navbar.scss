@@ -1,0 +1,37 @@
+@import "../abstracts/variables";
+
+.features-menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  width: 30%;
+  margin: 0 auto;
+
+  .a-custom {
+    text-decoration: none;
+    position: relative;
+    color: $text-gray-color;
+    border-bottom: 2px solid rgba($btn-gray-color, 0.3);
+
+    &.active {
+      border-bottom: $secondary-color;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 4px;
+      background-color: $btn-gray-color;
+      transition: width 0.3s ease;
+    }
+
+    &.active::after {
+      width: 100%;
+      background-color: $secondary-color;
+    }
+  }
+}

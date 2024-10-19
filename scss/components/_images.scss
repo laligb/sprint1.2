@@ -1,7 +1,9 @@
+@import "../abstracts/variables";
+
 .screen-img {
   background-image: url("..//../assets/illustration-hero.svg");
   background-size: cover;
-  width: 500px;
+  // width: 500px;
   height: 100%;
   position: relative;
 }
@@ -15,7 +17,7 @@
 
 .arc {
   width: 500px;
-  background-color: #4f62d8;
+  background-color: $primary-color;
   height: 300px;
   position: absolute;
   left: 50%;
@@ -23,4 +25,25 @@
   transform: translate(40%, -25%);
   border-radius: 50pc 0 0 50pc;
   z-index: -1;
+}
+
+.screen-img-2 {
+  background-image: url("..//../assets/illustration-features-tab-1.svg");
+  background-size: contain;
+  max-width: 500px;
+  height: 200%;
+  position: relative;
+  background-repeat: no-repeat;
+
+  .arc-left {
+    width: 500px;
+    height: 300px;
+    background-color: $primary-color;
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    transform: translate(-25%, -25%);
+    border-radius: 0pc 50pc 50pc 0;
+    z-index: -1;
+  }
 }

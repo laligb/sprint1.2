@@ -11847,7 +11847,6 @@ textarea.form-control-lg {
 .screen-img {
   background-image: url("..//../assets/illustration-hero.svg");
   background-size: cover;
-  width: 500px;
   height: 100%;
   position: relative;
 }
@@ -11861,13 +11860,33 @@ textarea.form-control-lg {
 
 .arc {
   width: 500px;
-  background-color: #4f62d8;
+  background-color: #5265e1;
   height: 300px;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(40%, -25%);
   border-radius: 50pc 0 0 50pc;
+  z-index: -1;
+}
+
+.screen-img-2 {
+  background-image: url("..//../assets/illustration-features-tab-1.svg");
+  background-size: contain;
+  max-width: 500px;
+  height: 200%;
+  position: relative;
+  background-repeat: no-repeat;
+}
+.screen-img-2 .arc-left {
+  width: 500px;
+  height: 300px;
+  background-color: #5265e1;
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  transform: translate(-25%, -25%);
+  border-radius: 0pc 50pc 50pc 0;
   z-index: -1;
 }
 
@@ -11879,6 +11898,51 @@ textarea.form-control-lg {
 .btn-custom-secondary {
   background-color: #fa5959;
   color: white;
+}
+
+.section {
+  margin: 200px 0;
+}
+
+.paragraph {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.features-menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  width: 30%;
+  margin: 0 auto;
+}
+.features-menu .a-custom {
+  text-decoration: none;
+  position: relative;
+  color: grey;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.3);
+}
+.features-menu .a-custom.active {
+  border-bottom: #fa5959;
+}
+.features-menu .a-custom::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background-color: grey;
+  transition: width 0.3s ease;
+}
+.features-menu .a-custom.active::after {
+  width: 100%;
+  background-color: #fa5959;
+}
+
+p {
+  color: grey;
 }
 
 /*# sourceMappingURL=main.css.map */
