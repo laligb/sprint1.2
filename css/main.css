@@ -11900,8 +11900,14 @@ textarea.form-control-lg {
   color: white;
 }
 
+.custom-accordion .custom-accordion-item {
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+}
+
 .paragraph {
-  max-width: 400px;
+  max-width: 500px;
   margin: 0 auto;
   text-align: center;
 }

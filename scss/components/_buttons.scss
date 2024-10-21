@@ -9,3 +9,11 @@
   background-color: $secondary-color;
   color: $btn-light-color;
 }
+
+.custom-accordion {
+  .custom-accordion-item {
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+  }
+}
