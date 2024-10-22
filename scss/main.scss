@@ -1,8 +1,10 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+@import "base/reset";
 @import "components/images";
 @import "components/buttons";
-@import "components/sections";
-@import "components/navbar";
+@import "layout/sections";
+@import "layout/navbar";
+@import "layout/footer";
 @import "components/texts";
 @import "components/cards";

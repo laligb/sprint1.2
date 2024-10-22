@@ -15,6 +15,15 @@
   background-repeat: no-repeat;
 }
 
+.logo-light {
+  background-image: url("..//../assets/logo-bookmark-light.svg");
+  width: 170px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 100px;
+}
+
 .arc {
   width: 500px;
   background-color: $primary-color;

@@ -1,0 +1,17 @@
+@import "../abstracts/variables";
+
+.paragraph {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section {
+  margin-bottom: 150px;
+}
+
+.section-contact {
+  background-color: $primary-color;
+
+  // height: 400px;
+}

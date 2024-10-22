@@ -17,3 +17,23 @@
     border-radius: 0;
   }
 }
+
+.custom-input-group {
+  height: 10px;
+  .custom-input {
+    max-width: 300px;
+  }
+}
+
+.email-form {
+  height: 50px;
+  .email-input {
+    width: 400px;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+  }
+  .button-form {
+    padding: 10px;
+  }
+}
