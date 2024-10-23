@@ -39,9 +39,11 @@
 @media screen and (max-width: 780px) {
   .nav-mobile {
     display: block;
+    width: 100%;
 
     .a-custom {
       text-align: center;
+      border-top: 1px solid rgba($btn-gray-color, 0.3);
     }
   }
 }
