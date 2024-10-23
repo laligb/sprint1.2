@@ -10,14 +10,14 @@
 
 .logo {
   background-image: url("..//../assets/logo-bookmark.svg");
-  width: 100%;
+  min-width: 200px;
   height: 30px;
   background-repeat: no-repeat;
 }
 
 .logo-light {
   background-image: url("..//../assets/logo-bookmark-light.svg");
-  width: 170px;
+  min-width: 170px;
   height: 30px;
   background-size: contain;
   background-repeat: no-repeat;

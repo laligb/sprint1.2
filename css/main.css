@@ -11859,6 +11859,51 @@ body {
   overflow-x: hidden;
 }
 
+.paragraph {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section {
+  margin-bottom: 150px;
+}
+
+.section-contact {
+  background-color: #5265e1;
+}
+
+.features-menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  width: 40%;
+  margin: 0 auto;
+}
+.features-menu .a-custom {
+  text-decoration: none;
+  position: relative;
+  color: grey;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.3);
+}
+.features-menu .a-custom.active {
+  border-bottom: #fa5959;
+}
+.features-menu .a-custom::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background-color: grey;
+  transition: width 0.3s ease;
+}
+.features-menu .a-custom.active::after {
+  width: 100%;
+  background-color: #fa5959;
+}
+
 .screen-img {
   background-image: url("..//../assets/illustration-hero.svg");
   background-size: cover;
@@ -11868,14 +11913,14 @@ body {
 
 .logo {
   background-image: url("..//../assets/logo-bookmark.svg");
-  width: 100%;
+  min-width: 200px;
   height: 30px;
   background-repeat: no-repeat;
 }
 
 .logo-light {
   background-image: url("..//../assets/logo-bookmark-light.svg");
-  width: 170px;
+  min-width: 170px;
   height: 30px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -11948,51 +11993,6 @@ body {
 }
 .email-form .button-form {
   padding: 10px;
-}
-
-.paragraph {
-  max-width: 500px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-section {
-  margin-bottom: 150px;
-}
-
-.section-contact {
-  background-color: #5265e1;
-}
-
-.features-menu {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
-  width: 40%;
-  margin: 0 auto;
-}
-.features-menu .a-custom {
-  text-decoration: none;
-  position: relative;
-  color: grey;
-  border-bottom: 2px solid rgba(128, 128, 128, 0.3);
-}
-.features-menu .a-custom.active {
-  border-bottom: #fa5959;
-}
-.features-menu .a-custom::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 4px;
-  background-color: grey;
-  transition: width 0.3s ease;
-}
-.features-menu .a-custom.active::after {
-  width: 100%;
-  background-color: #fa5959;
 }
 
 p {
