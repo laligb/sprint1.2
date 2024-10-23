@@ -11910,6 +11910,17 @@ section {
   height: 100%;
   position: relative;
 }
+.screen-img .arc {
+  width: 500px;
+  background-color: #5265e1;
+  height: 300px;
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  transform: translate(50%, -25%);
+  border-radius: 50pc 0 0 50pc;
+  z-index: -1;
+}
 
 .logo {
   background-image: url("..//../assets/logo-bookmark.svg");
@@ -11925,18 +11936,6 @@ section {
   background-size: contain;
   background-repeat: no-repeat;
   margin-left: 100px;
-}
-
-.arc {
-  width: 500px;
-  background-color: #5265e1;
-  height: 300px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(40%, -25%);
-  border-radius: 50pc 0 0 50pc;
-  z-index: -1;
 }
 
 .screen-img-2 {
@@ -11959,6 +11958,46 @@ section {
   z-index: -1;
 }
 
+.mob-screen-img {
+  display: none;
+  background-image: url("../../assets/illustration-hero.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 100%;
+  position: relative;
+}
+.mob-screen-img .arc-1 {
+  width: 80%;
+  background-color: #5265e1;
+  height: 80%;
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  transform: translate(25%, -30%);
+  border-radius: 50pc 0 0 50pc;
+  z-index: -1;
+}
+
+@media screen and (max-width: 780px) {
+  .screen-img {
+    display: none;
+  }
+  .mob-screen-img {
+    display: block;
+  }
+  .mob-version {
+    text-align: center;
+  }
+  .mob-version .buttons {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .mob-version .buttons button {
+    width: 100%;
+    font-size: smaller;
+  }
+}
 .btn-custom-primary {
   background-color: #5265e1;
   color: white;

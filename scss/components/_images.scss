@@ -6,6 +6,18 @@
   // width: 500px;
   height: 100%;
   position: relative;
+
+  .arc {
+    width: 500px;
+    background-color: $primary-color;
+    height: 300px;
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    transform: translate(50%, -25%);
+    border-radius: 50pc 0 0 50pc;
+    z-index: -1;
+  }
 }
 
 .logo {
@@ -22,18 +34,6 @@
   background-size: contain;
   background-repeat: no-repeat;
   margin-left: 100px;
-}
-
-.arc {
-  width: 500px;
-  background-color: $primary-color;
-  height: 300px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(40%, -25%);
-  border-radius: 50pc 0 0 50pc;
-  z-index: -1;
 }
 
 .screen-img-2 {
@@ -54,5 +54,52 @@
     transform: translate(-25%, -50%);
     border-radius: 0pc 50pc 50pc 0;
     z-index: -1;
+  }
+}
+
+// Mobile image
+.mob-screen-img {
+  display: none;
+  background-image: url("../../assets/illustration-hero.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 100%;
+  position: relative;
+
+  .arc-1 {
+    width: 80%;
+    background-color: $primary-color;
+    height: 80%;
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    transform: translate(25%, -30%);
+    border-radius: 50pc 0 0 50pc;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .screen-img {
+    display: none;
+  }
+
+  .mob-screen-img {
+    display: block;
+  }
+
+  .mob-version {
+    text-align: center;
+
+    .buttons {
+      display: flex;
+      justify-content: space-evenly;
+
+      button {
+        width: 100%;
+        font-size: smaller;
+      }
+    }
   }
 }
