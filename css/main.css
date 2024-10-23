@@ -11873,11 +11873,26 @@ section {
   background-color: #5265e1;
 }
 
+@media screen and (max-width: 780px) {
+  .mob-version-section1 {
+    text-align: center;
+  }
+  .mob-version-section1 .buttons {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .mob-version-section1 .buttons button {
+    width: 100%;
+    font-size: smaller;
+  }
+  .mob-version-section2 {
+    text-align: center;
+  }
+}
 .features-menu {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
-  width: 40%;
   margin: 0 auto;
 }
 .features-menu .a-custom {
@@ -11904,6 +11919,14 @@ section {
   background-color: #fa5959;
 }
 
+@media screen and (max-width: 780px) {
+  .nav-mobile {
+    display: block;
+  }
+  .nav-mobile .a-custom {
+    text-align: center;
+  }
+}
 .screen-img {
   background-image: url("..//../assets/illustration-hero.svg");
   background-size: cover;
@@ -11985,17 +12008,6 @@ section {
   }
   .mob-screen-img {
     display: block;
-  }
-  .mob-version {
-    text-align: center;
-  }
-  .mob-version .buttons {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .mob-version .buttons button {
-    width: 100%;
-    font-size: smaller;
   }
 }
 .btn-custom-primary {

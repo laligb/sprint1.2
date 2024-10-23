@@ -88,18 +88,4 @@
   .mob-screen-img {
     display: block;
   }
-
-  .mob-version {
-    text-align: center;
-
-    .buttons {
-      display: flex;
-      justify-content: space-evenly;
-
-      button {
-        width: 100%;
-        font-size: smaller;
-      }
-    }
-  }
 }

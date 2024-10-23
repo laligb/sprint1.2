@@ -5,7 +5,7 @@
   justify-content: center;
   margin-bottom: 30px;
 
-  width: 40%;
+  // width: 80%;
   margin: 0 auto;
 
   .a-custom {
@@ -32,6 +32,16 @@
     &.active::after {
       width: 100%;
       background-color: $secondary-color;
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .nav-mobile {
+    display: block;
+
+    .a-custom {
+      text-align: center;
     }
   }
 }
