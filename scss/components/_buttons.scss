@@ -43,19 +43,7 @@
   }
 }
 
-.email-form {
-  height: 50px;
-
-  .email-input {
-    // width: 400px;
-    padding: 10px;
-    border-radius: 4px;
-    border: none;
-  }
-  .button-form {
-    padding: 10px;
-  }
-}
-
-@media screen and (max-width: 780px) {
+.btn-contact-us {
+  font-size: 14px;
+  height: 37px;
 }
