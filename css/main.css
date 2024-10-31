@@ -12023,7 +12023,6 @@ section {
 .mob-screen-img-2::before {
   content: "";
   width: 100%;
-  height: 80%;
   background-color: #5265e1;
   position: absolute;
   left: 0%;
