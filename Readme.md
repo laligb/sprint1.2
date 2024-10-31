@@ -7,7 +7,7 @@ A Simple Bookmark Manager is a web application designed to help users organize a
 - [Installation](#installation)
 - [Usage](#usage)
 - [Features](#features)
-- [Technologies] (#Technologies)
+- [Technologies](#Technologies)
 
 ## Installation
 
