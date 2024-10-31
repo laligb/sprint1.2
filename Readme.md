@@ -7,9 +7,7 @@ A Simple Bookmark Manager is a web application designed to help users organize a
 - [Installation](#installation)
 - [Usage](#usage)
 - [Features](#features)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
+- [Technologies] (#Technologies)
 
 ## Installation
 
@@ -53,22 +51,14 @@ To get started with the project, follow these steps:
 
 ## Usage
 
-Once the project is set up, you can start using the bookmark manager. The application allows you to:
-
-- Add new bookmarks with titles and URLs.
-- Organize bookmarks into categories.
-- Delete bookmarks that you no longer need.
-
-### Example
-
-1. Enter the title of your bookmark.
-2. Input the URL you want to save.
-3. Click the "Add Bookmark" button to save it.
-4. Your bookmark will appear in the list below.
+This project provides a simple, organized landing page for managing bookmarks with an intuitive design.
 
 ## Features
 
 - Responsive design using Bootstrap for a mobile-friendly experience.
 - SCSS for structured and manageable styles.
-- Easy-to-use interface for adding, organizing, and removing bookmarks.
-- Customizable categories for better organization of bookmarks.
+
+## Technologies
+
+- Bootstrap 5
+- SCSS
