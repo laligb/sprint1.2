@@ -12080,10 +12080,24 @@ section {
   background-color: #5265e1;
   color: white;
 }
+.btn-custom-primary:hover {
+  background-color: white;
+  color: #5265e1;
+  border: 1px solid #5265e1;
+}
 
 .btn-custom-secondary {
   background-color: #fa5959;
   color: white;
+}
+.btn-custom-secondary:hover {
+  background-color: white;
+  color: #fa5959;
+  border: 1px solid #fa5959;
+}
+
+.btn-custom-light:hover {
+  border: 1px solid grey;
 }
 
 .custom-accordion .custom-accordion-item {
@@ -12118,6 +12132,10 @@ p {
 .section-contact h5, .section-contact .h5,
 .section-contact p {
   color: white;
+}
+
+a:hover {
+  color: #fa5959 !important;
 }
 
 .card {

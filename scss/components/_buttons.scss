@@ -3,11 +3,29 @@
 .btn-custom-primary {
   background-color: $primary-color;
   color: $btn-light-color;
+
+  &:hover {
+    background-color: $btn-light-color;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+  }
 }
 
 .btn-custom-secondary {
   background-color: $secondary-color;
   color: $btn-light-color;
+
+  &:hover {
+    background-color: $btn-light-color;
+    color: $secondary-color;
+    border: 1px solid $secondary-color;
+  }
+}
+
+.btn-custom-light {
+  &:hover {
+    border: 1px solid $btn-gray-color;
+  }
 }
 
 .custom-accordion {
