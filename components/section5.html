@@ -32,8 +32,8 @@
 </section>
 
 <script>
-  // Ensure that the DOM is fully loaded before adding event listeners
-  document.addEventListener("DOMContentLoaded", function () {
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function () {
     "use strict";
 
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
@@ -45,7 +45,7 @@
         "submit",
         function (event) {
           if (!form.checkValidity()) {
-            event.preventDefault(); // Prevent the form from submitting
+            event.preventDefault();
             event.stopPropagation();
           }
 
@@ -54,5 +54,5 @@
         false
       );
     });
-  });
+  })();
 </script>
