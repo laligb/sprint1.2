@@ -38,11 +38,38 @@
     document.getElementById(elementId).innerHTML = text;
   }
 
-  loadHTML("header", "components/header.html");
-  loadHTML("section1", "components/section1.html");
-  loadHTML("section2", "components/section2.html");
-  loadHTML("section3", "components/section3.html");
-  loadHTML("section4", "components/section4.html");
-  loadHTML("section5", "components/section5.html");
-  loadHTML("footer", "components/footer.html");
+  // Asynchronically reading the sections to avoid refresh the page before submit button be validated
+  async function loadAllSections() {
+    await loadHTML("header", "components/header.html");
+    await loadHTML("section1", "components/section1.html");
+    await loadHTML("section2", "components/section2.html");
+    await loadHTML("section3", "components/section3.html");
+    await loadHTML("section4", "components/section4.html");
+    await loadHTML("section5", "components/section5.html");
+    await loadHTML("footer", "components/footer.html");
+
+    initializeValidation();
+  }
+
+  loadAllSections();
+
+  // Validation function for email form
+  function initializeValidation() {
+    "use strict";
+    var forms = document.querySelectorAll(".needs-validation");
+
+    Array.prototype.slice.call(forms).forEach(function (form) {
+      form.addEventListener(
+        "submit",
+        function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add("was-validated");
+        },
+        false
+      );
+    });
+  }
 </script>
