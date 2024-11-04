@@ -7,12 +7,17 @@
     novalidate
   >
     <div class="col-lg-8 col-sm-12 mb-2">
-      <input
-        type="email"
-        class="form-control"
-        placeholder="Enter your email address"
-        required
-      />
+      <div class="input-group has-validation">
+        <label for="validationCustom01" class="form-label"></label>
+        <input
+          type="email"
+          class="form-control"
+          id="validationCustom01"
+          placeholder="Enter your email address"
+          required
+        />
+        <div class="invalid-feedback">Whoops, make sure it's an email.</div>
+      </div>
     </div>
 
     <div class="col-lg-4 col-sm-12 mb-2">
@@ -25,3 +30,29 @@
     </div>
   </form>
 </section>
+
+<script>
+  // Ensure that the DOM is fully loaded before adding event listeners
+  document.addEventListener("DOMContentLoaded", function () {
+    "use strict";
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll(".needs-validation");
+
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms).forEach(function (form) {
+      form.addEventListener(
+        "submit",
+        function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault(); // Prevent the form from submitting
+            event.stopPropagation();
+          }
+
+          form.classList.add("was-validated");
+        },
+        false
+      );
+    });
+  });
+</script>
