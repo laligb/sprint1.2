@@ -49,6 +49,7 @@
     await loadHTML("footer", "components/footer.html");
 
     initializeValidation();
+    activateTabs();
   }
 
   loadAllSections();
@@ -70,6 +71,15 @@
         },
         false
       );
+    });
+  }
+
+  // tabs
+  function activateTabs() {
+    var tabEl = document.querySelector('button[data-bs-toggle="tab"]');
+    tabEl.addEventListener("shown.bs.tab", function (event) {
+      event.target; // newly activated tab
+      event.relatedTarget; // previous active tab
     });
   }
 </script>

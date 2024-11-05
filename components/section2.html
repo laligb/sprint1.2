@@ -11,31 +11,81 @@
   <div class="d-flex justify-content-center features-menu mb-5">
     <ul class="nav-mobile nav">
       <li class="nav-item">
-        <a class="nav-link a-custom active" href="#">Bookmarking</a>
+        <a
+          class="nav-link a-custom active"
+          data-bs-toggle="tab"
+          href="#bookmarking"
+          >Bookmarking</a
+        >
       </li>
       <li class="nav-item">
-        <a class="nav-link a-custom" href="#">Speady Searching</a>
+        <a class="nav-link a-custom" data-bs-toggle="tab" href="#searching"
+          >Speady Searching</a
+        >
       </li>
       <li class="nav-item">
-        <a class="nav-link a-custom" href="#"> Sharing</a>
+        <a class="nav-link a-custom" data-bs-toggle="tab" href="#sharing">
+          Sharing</a
+        >
       </li>
     </ul>
   </div>
 
-  <div class="row mt-5">
-    <div class="col-lg-6 col-sm-12">
-      <div class="screen-img-2 mob-screen-img-2"></div>
+  <!-- Tab Content -->
+  <div class="tab-content mt-5">
+    <div class="tab-pane fade show active" id="bookmarking">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12">
+          <div class="screen-img-2 mob-screen-img-2"></div>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <h1 class="mb-4 mt-5">Bookmark in one click</h1>
+          <p class="mb-4">
+            Organize your bookmarks however you like. Our simple drag-and-drop
+            interface gives you complete control over how you manage your
+            favorite sites.
+          </p>
+          <button class="btn shadow btn-custom-primary rounded px-4 py-2">
+            More Info
+          </button>
+        </div>
+      </div>
     </div>
-    <div class="col-lg-6 col-sm-12">
-      <h1 class="mb-4 mt-5">Bookmark in a one click</h1>
-      <p class="mb-4">
-        Organize your bookmarks however you like. Our simple drag-and-drop
-        interface gives you complete control over how you manage your favourite
-        sites.
-      </p>
-      <button class="btn shadow btn-custom-primary rounded px-4 py-2">
-        More Info
-      </button>
+
+    <div class="tab-pane fade" id="searching">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12">
+          <div class="screen-img-2 mob-screen-img-2"></div>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <h1 class="mb-4 mt-5">Find things fast</h1>
+          <p class="mb-4">
+            Quickly search through your bookmarks with our efficient search
+            system, making sure you find what you need in no time.
+          </p>
+          <button class="btn shadow btn-custom-primary rounded px-4 py-2">
+            More Info
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-pane fade" id="sharing">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12">
+          <div class="screen-img-2 mob-screen-img-2"></div>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <h1 class="mb-4 mt-5">Easily share bookmarks</h1>
+          <p class="mb-4">
+            Share your favorite sites with friends and colleagues effortlessly.
+            Stay connected and collaborative.
+          </p>
+          <button class="btn shadow btn-custom-primary rounded px-4 py-2">
+            More Info
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </section>
