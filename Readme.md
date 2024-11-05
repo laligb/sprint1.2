@@ -8,6 +8,7 @@ A Simple Bookmark Manager is a web application designed to help users organize a
 - [Usage](#usage)
 - [Features](#features)
 - [Technologies](#Technologies)
+- [Live Demo](#live-demo)
 
 ## Installation
 
@@ -62,3 +63,7 @@ This project provides a simple, organized landing page for managing bookmarks wi
 
 - Bootstrap 5
 - SCSS
+
+## Live Demo
+
+Access the live application [here](https://sprint1-2.vercel.app/).
